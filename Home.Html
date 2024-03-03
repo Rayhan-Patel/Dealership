@@ -7,150 +7,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/homestyle.css" rel="stylesheet">
 <style>
-    @media (max-width: 576px) {
-        .jumbotron {
-            background-size: cover;
-            opacity:0.75;
-            min-height: fit-content;
-        }
-        .dropdown-menu {
-            overflow-x: hidden;
-        }
-        .navbar-brand img {
-            border-radius: 50%;
-            width: 70px;
-            object-fit: cover;
-        }
-        .left-advertisement,
-        .right-advertisement {
-            display: none;
-        }
-        .Create_Account-inside h3 {
-            color: whitesmoke;
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-    }
-    body {
-        background-color:#898FA7;
-    }
-    button {
-        background-color: #006494 !important; 
-        transition: background-color 0.3s ease !important;
-    }
-    button:hover {
-        background-color: #373B8C !important;
-        color: white !important;
-    }
-    .card {
-        transition: transform 0.3s ease-in-out;
-    }
-    .card:hover {
-        margin-top: 2px;
-        transform: translateY(-15px);
-    }
-    .card-img-top {
-        height: 300px;
-        object-fit: cover;
-    }
-    .Car_type_name {
-        text-align: center;
-    }
-    .Car_selection_img {
-        height: 100px;
-        object-fit: cover;
-    }
-    .buttons {
-        height: 50px;
-        background-color: #006494;
-        width: 100%;
-        color: #d6d9c8;
-        font-size: x-large;
-        margin-top: 15px;
-    }
-    .links {
-        font-size: x-large;
-    }
-    .navbar-brand img {
-        max-height: 100px;
-        padding: 0px;
-    }
-    .navbar {
-        background-color: #2A3140; 
-    }
-    .jumbotron {
-        background-image: url('images/header.back.avif');
-        background-size: cover;
-        background-position: center;
-        opacity: .8;
-        color: #e0e0de;
-        text-align: left;
-        padding: 5% 0;
-        background-color: #001219;
-    }
-    .jumbotron h1{
-        font-size: 60px;
-    }
-    .jumbotron p{
-        margin-top: 5px;
-        font-size: x-large;
-        padding-left: 5%;
-    }
-    .container {
-        margin-top: 50px;
-        background-color: #7F8AA8; 
-        padding: 20px;
-        border-radius: 10px;
-    }
-    .card-body{
-        color: #09182D;
-        background-color: #BFC7D9;
-        height:  400px;
-    }
-    .form-control-lg {
-        margin-bottom: 15px;
-    }
-    .form-check-inline {
-        margin-bottom: 15px;
-    }
-    .advertisements{
-        height: 700px;
-        width: 355px;
-    }
-
-    .left-advertisement {
-        float: left;
-        margin-right: 10px;
-    }
-
-    .right-advertisement {
-        float: right;
-        margin-left: 10px;
-    }
-    .Create-Account{
-        background-image: url('images/Acc\ back.avif');
-        background-size:cover;
-        background-position: center;
-        color:#ffffff;
-        max-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-    }
-    
-    .Create_Account-inside h3 {
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-    .Create_Account-inside button {
-        padding: 10px 20px;
-        font-size: 20px;
-        background-color: #006494;
-        color: white;
-        transition: background-color 0.3s ease;
-    }
 </style>
 </head>
 <body>
@@ -158,9 +17,9 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top rounded">
     <div class="container-fluid">
         <a class="navbar-brand m-0 p-0" href="#">
-            <img src="images/brand.jpg" class="img-fluid rounded-circle-sm">
+            <img src="images/brand.jpg" alt="Car Dealership Logo" class="img-fluid rounded-circle-sm">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <button id="navbar-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mynavbar">
@@ -175,7 +34,7 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
                     <a class="links nav-link" href="#">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="links nav-link" href="#">Contact</a>
+                    <a class="links nav-link" href="Contact.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -186,7 +45,7 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
     <h1 class="mt-5 p-5">Welcome to Our Car Dealership</h1>
     <p class="mt-0">Explore our wide range of cars and services</p>
     <h2 style="margin-left:10%">
-        <a class="btn btn-primary btn-lg" href="#" role="button">View Inventory</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">View Cars</a>
     </h2>
 </div>
 
@@ -206,25 +65,25 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
                 <li class="row">
                     <div class="col mt-3">
                         <a class="dropdown-item" href="Sedan.Html">
-                            <img src="images/type1.jpg" class="Car_selection_img" alt="Car Type Image">
+                            <img src="https://static.vecteezy.com/system/resources/previews/018/821/445/non_2x/realistic-isolated-white-sedan-car-with-3d-view-and-white-background-free-vector.jpg" class="Car_selection_img" alt="Car Type Image">
                             <h5 class="Car_type_name">Sedan</h5>
                         </a>
                     </div>
                     <div class="col mt-3">
                         <a class="dropdown-item" href="SUV.Html">
-                            <img src="images/type2.jpg" class="Car_selection_img" alt="Car Type Image">
+                            <img src="https://media.istockphoto.com/id/959391798/photo/3d-illustration-of-generic-compact-white-suv.jpg?s=612x612&w=0&k=20&c=2VqUK6i3gs1_ZbYKCEusyjhp-PqakZFsMM7xppqsqeU=" class="Car_selection_img" alt="Car Type Image">
                             <h5 class="Car_type_name">SUV</h5>
                         </a>
                     </div>
                     <div class="col mt-3">
                         <a class="dropdown-item" href="Hatchback.Html">
-                            <img src="images/type3.jpg" class="Car_selection_img" alt="Car Type Image">
+                            <img src="https://media.istockphoto.com/id/1150425295/photo/3d-illustration-of-generic-hatchback-car-perspective-view.jpg?s=612x612&w=0&k=20&c=vws8oDFjcfGpqNAybWPxsA9XROdcBh2MXW2PGEDgk-8=" class="Car_selection_img" alt="Car Type Image">
                             <h5 class="Car_type_name">Hatchback</h5>
                         </a>
                     </div>
                     <div class="col mt-3">
                         <a class="dropdown-item" href="Exortic.Html">
-                            <img src="images/type4.png" class="Car_selection_img" alt="Car Type Image">
+                            <img src="https://static.tcimg.net/vehicles/primary/78f0bf44cd9b9d17/2022-Maserati-MC20-gray-full_color-driver_side_front_quarter.png" class="Car_selection_img" alt="Car Type Image">
                             <h5 class="Car_type_name">Exotics</h5>
                         </a>
                     </div>
@@ -234,20 +93,13 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
     </div>
 </div>
 
-<div class="container-fluid ">
-    <div class="left-advertisement advertisements">
-        <img src="images/Ad left.png!f305cw" class="advertisements rounded-3" alt="Ad-1" height=275 width=48>
-    </div>
-    
-    <div class="right-advertisement advertisements">
-        <img src="images/Ad right.jpg" class="advertisements rounded-3" alt="Ad-1" height=275 width=48>
-    </div>
+<div class="container-fluid">
     <div class="container">
         <h2 class=" mb-4">Featured Cars</h2>
         <div class="row mt-2">
             <div class="col-md-4">
-                <div class="card">
-                    <img src="images/XUv700.webp" class="card-img-top" alt="Car 1">
+                <div class="card mt-sm-4">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/XUV700/10789/1705388477954/front-left-side-47.jpg" class="card-img-top" alt="Car 1">
                     <div class="card-body">
                         <h5 class="card-title">Mahindra XUV700</h5>
                         <p class="card-text">
@@ -255,13 +107,15 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
                             of cutting-edge technology, robust performance, and luxurious comfort, this vehicle stands out with its striking design, 
                             spacious interiors, advanced safety features, and dynamic driving experience, setting new benchmarks in its segment.
                         </p>
+                    </div>
+                    <div class="card-footer">
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="images/Swift.jpeg" class="card-img-top" alt="Swift">
+                <div class="card mt-4">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/54399/swift-exterior-right-front-three-quarter-63.jpeg?q=80" class="card-img-top" alt="Swift">
                     <div class="card-body">
                         <h5 class="card-title">Maruti Swift</h5>
                         <p class="card-text">
@@ -269,19 +123,23 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
                             This iconic hatchback is the epitome of modern design, cutting-edge technology, and unmatched comfort. 
                             Whether you're navigating city streets or embarking on a weekend adventure, the Swift ensures an exhilarating 
                             driving experience like no other.</p>
+                    </div>
+                    <div class="card-footer">
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="images/Baleno.webp" class="card-img-top" alt="Baleno">
+                <div class="card mt-4">
+                    <img src="https://media.zigcdn.com/media/model/2023/Feb/front-1-4-left-1308182937_600x400.jpg" class="card-img-top" alt="Baleno">
                     <div class="card-body">
                         <h5 class="card-title">Maruti Baleno</h5>
                         <p class="card-text">
                             Discover the Maruti Suzuki Baleno a sleek hatchback that redefines driving excellence. With its striking design,
                             advanced features, and fuel-efficient engine, the Baleno promises a thrilling ride. Experience unmatched style, 
                             performance, and innovation in every journey. Elevate your drive with the Maruti Suzuki Baleno today.</p>
+                    </div>
+                    <div class="card-footer">
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
@@ -300,39 +158,39 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
     <div class="modal" id="createAccount">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Create Account</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="modal-header">
+                <h5 class="modal-title">Create Account</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Full Name">
                 </div>
-                <div class="modal-body">
-                    <form>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Full Name">
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="Confirm Password">
-                    </div>
-                    </form>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Confirm Password">
+                </div>
+                </form>
                 <p class="text-muted">By creating an account, you agree to our <a href="#">Terms & Conditions</a>.</p>
                 <div class="text-center">
-                    <button type="button" class="btn btn-primary">Create Account</button>
+                <button type="button" class="btn btn-primary">Create Account</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="text-center w-100">
+                <p>Or sign up using</p>
+                <div >
+                    <a href="https://gmail.com" target="_blank"><span class="fa fa-google"></span></a>
+                    <a href="https://yahoomail.com" target="_blank"><span class="fa fa-yahoo"></span></a>
                 </div>
                 </div>
-                <div class="modal-footer">
-                    <div class="text-center w-100">
-                        <p>Or sign up using</p>
-                        <div >
-                            <a href="https://accounts.google.com/InteractiveLogin/signinchooser?hl=en-gb&ifkv=ASKXGp3xFw_eshbFe1W18oeKYbv7VDGoqT1YKDbkXOVIR4TPdYy7AXqoVK8KrNPLV0-sd5BSl1wn&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><img src="images/Google.png" alt="Google Logo" width="30" class="me-3 "></a>
-                            <a href="https://login.yahoo.com/?.src=ym&lang=en-US&done=https%3A%2F%2Fmail.yahoo.com%2F%3F.lang%3Den-IN%26guce_referrer%3DaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8%26guce_referrer_sig%3DAQAAAHarMhzpKovMEJalQP33cUMBGbFhu-mQ6ypg7z9nc7Xe4nVH0RLn2qho1k_mGUQl-USLMWwnmKrIbjPnDYKvgZuEwwSzVsV6UOnwuwRSPtiwg5Jsurv7oSFxkzy7y1R-AusiJNUNHul0O0c5frPyGZfx6R9HZ-KU4PV7zFxATb__" target="_blank"><img src="images/Yahoo.png" alt="Apple Logo" width="30"></a>
-                        </div>
-                    </div>
-                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -377,6 +235,15 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
         <br>
         <h5 style="text-align: center">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</h5>
     </form>
+</div>
+
+<div class="social-media container">
+    <h2>Connect with Us:</h2>
+    <a href="https://www.facebook.com" class="fa fa-facebook"><span>&nbsp;FaceBook</span></a>
+    <a href="https://twitter.com/?lang=en" class="fa fa-twitter"><span>&nbsp;Twitter</span></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram"><span>&nbsp;Instagram</span></a>
+    <a href="https://in.linkedin.com" class="fa fa-linkedin">&nbsp;LinkedIn</a>
+    <a href="https://www.whatsapp.com" class="fa fa-whatsapp">&nbsp;Whatsapp</a>
 </div>
 </body>
 </html>
