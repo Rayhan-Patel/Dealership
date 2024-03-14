@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="css/homestyle.css" rel="stylesheet">
+  <style>
+    #image-section {
+      height: 410px;
+    }
+
+    .carousel-item img {
+      width: 33.3%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      font-size: 0.75rem;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: absolute;
+      top: 40%;
+    }
+
+    .carousel-control-prev {
+      left: 0;
+    }
+
+    .carousel-control-next {
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark rounded">
+    <div class="container-fluid">
+      <a class="navbar-brand m-0 p-0" href="#">
+        <img src="images/logo2.png" alt="Car Dealership Logo" class="img-fluid rounded-circle-sm">
+      </a>
+      <button id="navbar-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="links nav-link active" href="Home_page.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="links nav-link" href="#">Cars</a>
+          </li>
+          <li class="nav-item">
+            <a class="links nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="links nav-link" href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <img src="images/car1/baleno.webp" alt="" class="img-fluid rounded-3" id="image-section">
+        <br>
+      </div>
+      <div class="col-md-6 rounded-3">
+        <form action="#" method="post" class="form">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="clearfix">
+                <span class="float-start">Type</span>
+                <strong class="float-end">Used vehicle</strong>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="clearfix">
+                <span class="float-start">First registration</span>
+                <strong class="float-end">05/2018</strong>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="clearfix">
+                <span class="float-start">Kmpl</span>
+                <strong class="float-end">20 km</strong>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="clearfix">
+                <span class="float-start">Fuel</span>
+                <strong class="float-end">Diesel/Petrol</strong>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="clearfix">
+                <span class="float-start">Engine size</span>
+                <strong class="float-end">1197 cc</strong>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <span class="float-start">Power</span>
+              <strong class="float-end">88.50 bhp</strong>
+            </li>
+            <li class="list-group-item">
+              <span class="float-start">Gearbox</span>
+              <strong class="float-end">Manual/Automatic</strong>
+            </li>
+            <li class="list-group-item">
+              <span class="float-start">Number of seats</span>
+              <strong class="float-end">5</strong>
+            </li>
+            <li class="list-group-item">
+              <span class="float-start">Doors</span>
+              <strong class="float-end">4</strong>
+            </li>
+            <li class="list-group-item">
+              <span class="float-start">Color</span>
+              <strong class="float-end">Glossy Blue</strong>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="col-md-12 mt-2">
+        <div id="imageSlider" class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-around">
+                <img src="images/car1/side-profile.webp" alt="Image 1" onclick="changeImage('images/car1/side-profile.webp')">
+                <img src="images/car1/backside.webp" alt="Image 2" onclick="changeImage('images/car1/backside.webp')">
+                <img src="images/car1/wheel alloys.webp" alt="Image 3" onclick="changeImage('images/car1/wheel alloys.webp')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-around">
+                <img src="images/car1/front-interior.webp" alt="Image 4" onclick="changeImage('images/car1/front-interior.webp')">
+                <img src="images/car1/back-interior.webp" alt="Image 5" onclick="changeImage('images/car1/back-interior.webp')">
+                <img src="images/car1/interior-2.webp" alt="Image 6" onclick="changeImage('images/car1/interior-2.webp')">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-around">
+                <img src="images/car1/bootspace.webp" alt="Image 7" onclick="changeImage('images/car1/bootspace.webp')">
+                <img src="images/car1/Baleno.webp" alt="Image 8" onclick="changeImage('images/car1/Baleno.webp')">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section-heading">
+          <h2>Vehicle Description</h2>
+        </div>
+        <div class="left-content">
+          <p>- Colour coded bumpers<br>- Immobiliser (Top Model)<br>- Central locking - remote<br>- Passenger airbag<br>- Electric windows<br>- Rear head rests<br>- Radio<br>- CD player<br>- Ideal first car<br>- Warranty<br>- High level brake light<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="section-heading">
+          <h2>Vehicle Extras</h2>
+        </div>
+        <div class="left-content">
+          <p>- ABS <br>-Leather seats <br>-Power Assisted Steering<br>-Xenon headlights</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section-heading">
+          <h2>Contact Details</h2>
+        </div>
+        <div class="left-content">
+          <p>
+            <span>Name</span>
+            <br>
+            <strong>John Smith</strong>
+          </p>
+          <p>
+            <span>Phone</span>
+            <br>
+            <strong>
+              <a href="tel:123-456-789">123-456-789</a>
+            </strong>
+          </p>
+          <p>
+            <span>Mobile phone</span>
+            <br>
+            <strong>
+              <a href="tel:456789123">4567891235</a>
+            </strong>
+          </p>
+          <p>
+            <span>Email</span>
+            <br>
+            <strong>
+              <a href="mailto:john@carsales.com">john@carsales.com</a>
+            </strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="BookingModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Book Now</h5>
+          <button type="button" class="close" data-bs-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="contact-form">
+            <form action="#" id="contact">
+              <div class="row">
+                <div class="col-md-6">
+                  <fieldset>
+                    <input type="text" class="form-control" placeholder="Pick-up location" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input type="text" class="form-control" placeholder="Return location" required="">
+                  </fieldset>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <fieldset>
+                    <input type="text" class="form-control" placeholder="Pick-up date/time" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input type="text" class="form-control" placeholder="Return date/time" required="">
+                  </fieldset>
+                </div>
+              </div>
+              <input type="text" class="form-control" placeholder="Enter full name" required="">
+              <div class="row">
+                <div class="col-md-6">
+                  <fieldset>
+                    <input type="text" class="form-control" placeholder="Enter email address" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input type="text" class="form-control" placeholder="Enter phone" required="">
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  function changeImage(imgName) {
+    document.getElementById("image-section").src = imgName;
+  }
+</script>
+
+</html>
