@@ -1,5 +1,6 @@
   .carousel-item img {
-    width:13.7vw;
+    width:20vw;
+    height:14vh;
   }
 
   .carousel-control-prev,
@@ -21,23 +22,4 @@
 
   .carousel-control-next {
     right: 0;
-  }
-
-  #imageSlider{
-    position: relative;
-    top: -15.5vh;
-  }
-
-  @media (max-width:768px) {
-    .carousel-item img {
-      width:30vw;
-      height:14vh;
-    }
-    #detail-table{
-      margin-bottom: 180px;
-    }
-    #imageSlider{
-      position: relative;
-      top: -15vh;
-    }
   }
