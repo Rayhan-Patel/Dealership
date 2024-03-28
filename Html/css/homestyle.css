@@ -284,7 +284,7 @@ button:hover {
     #cars-heading h1{
         font-size: 50px;
         font-style: oblique;
-        color: rgb(220, 226, 235);
+        color:rgb(0, 0, 0);
     }
 
     #cars-heading p{
