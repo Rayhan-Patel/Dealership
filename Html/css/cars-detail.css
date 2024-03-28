@@ -23,3 +23,22 @@
   .carousel-control-next {
     right: 0;
   }
+
+  #imageSlider{
+    position: relative;
+    top: -15vh;
+  }
+
+  @media (max-width:768px) {
+    .carousel-item img {
+      width:30vw;
+      height:14vh;
+    }
+    #detail-table{
+      margin-bottom: 180px;
+    }
+    #imageSlider{
+      position: relative;
+      top: -15vh;
+    }
+  }
