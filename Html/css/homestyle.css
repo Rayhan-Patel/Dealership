@@ -292,7 +292,8 @@ button:hover {
         font-style: italic;
     }
 
-    .product-item >.down-content>a,h2{
+    .product-item >.down-content>a,
+    .produc-item >.down-content>h2{
         color: #270eb5;
     }
 
