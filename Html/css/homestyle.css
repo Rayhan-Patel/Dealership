@@ -275,7 +275,7 @@ button:hover {
     }
 
     #cars-heading{
-        background-image: url("../images/cars-heading1.jpg");
+        background-image: url("../images/cars-heading.jpg");
         background-position: bottom;
         opacity: 0.9;
         background-size: cover;
