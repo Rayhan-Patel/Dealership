@@ -1,27 +1,15 @@
-@media (max-width:576) {
-    .product-item{
-        margin: 0px !important;
-        margin-top: 50px !important;
-    }
-    .product-item img{
-        border-radius: 20px;
-        width: 107% !important;
-        height: auto !important;
-        position: relative !important;
-        left: -10px !important;
-    }
-}
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .jumbotron {
-        background-image: url('images/car_dealer_mobile.jpg');
+        background-image: url('images/back.avif');
         background-size: cover;
+        background-position: center;
         opacity:0.75;
+        min-height: fit-content;
     }
     .dropdown-menu {
         overflow-x: hidden;
     }
     .navbar-brand img {
-        border-radius: 50%;
         width: 70px;
         object-fit: cover;
     }
@@ -34,23 +22,34 @@
     .card{
         margin-top: 100px;
     }
-    .product-item{
-        margin: 0px !important;
-        margin-top: 50px !important;
-        width:90vw !important;
-    }
-    .product-item img{
-        border-radius: 20px;
-        width: 107% !important;
-        height: auto;
-        position: relative;
-        left: -10px;
-    }
+    
 }
-
+@media (max-width:768px) {
+    .buttons {
+        font-size:22px !important;
+    }
+    
+}
 body {
     background-color:#898FA7;
 }
+
+.container {
+    margin-top: 50px;
+    background-color: #7F8AA8; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.custom-container {
+    width: 80vw;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #7F8AA8; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
 button {
     background-color: #006494 !important; 
     transition: background-color 0.3s ease !important;
@@ -75,7 +74,7 @@ button:hover {
     background-color: #BFC7D9;
     height:  330px;
     overflow-y: auto;
-    font-size:large ;
+    font-size:23px ;
 }
 .card-footer{
     background-color: #BFC7D9;
@@ -89,17 +88,16 @@ button:hover {
     object-fit: cover;
 }
 .buttons {
-    height: 50px;
+    height: 70px;
     background-color: #006494;
     width: 100%;
     color: #d6d9c8;
-    font-size: x-large;
+    font-size:xx-large;
     margin-top: 15px;
-    font-size: larger;
 }
 .links {
-    font-size: xx-large;
-    margin: 5px;
+    font-size:40px !important;
+    margin: 10px;
 }
 
 #navbar-button{
@@ -107,20 +105,34 @@ button:hover {
     background-color: #2A3140 !important;
 }
 
+#More_section{
+    border-color:#2A3140 !important;
+    background-color: #2A3140 !important;
+}
+
+#More_section a{
+    color:whitesmoke;
+    font-size: x-large;
+}
+
+#More_section a:hover{
+
+    background-color: #7F8AA8;
+}
 .navbar-brand img {
-    max-height:150px;
-    padding: 0%;
-    margin: 0%;
+    max-height: 150px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 15px;
 }
 .navbar {
-    background-color: #2A3140;
-    padding: 0%;
-    margin: 0%;
+    background-color: #2A3140; 
 }
 .jumbotron {
     background-image:url("../images/back.avif");
     background-size: cover;
     background-position: center;
+    border-radius: 10px;
     opacity: .8;
     color: #e0e0de;
     text-align: left;
@@ -132,18 +144,8 @@ button:hover {
 }
 .jumbotron p,a{
     margin-top: 5px;
-    margin-bottom: 35px;
     font-size: x-large;
-    padding-left: 35px;
-}
-.jumbotron h2{
-    margin:10px
-}
-.container {
-    margin-top: 50px;
-    background-color: #7F8AA8; 
-    padding: 20px;
-    border-radius: 10px;
+    padding-left: 5%;
 }
 
 .form-control-lg {
@@ -156,12 +158,8 @@ button:hover {
 .Create-Account{
     background-image: url("/images/Acc\ back.avif");
     background-size:cover;
-    background-position: center;
-    color:#ffffff;
-    max-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-position: bottom;
+    color:white;
     padding: 20px;
 }
 
@@ -171,7 +169,7 @@ button:hover {
 }
 .Create_Account-inside button {
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 30px;
     background-color: #006494;
     color: white;
     transition: background-color 0.3s ease;
@@ -193,39 +191,135 @@ button:hover {
     margin-bottom: 25px;
     text-align: center;
   }
-  .contact-form{
-    background-color: #697597;
-    border-radius: 20px;
-  }
-  .contact-form label{
-    margin: 10px;
-    font-size: larger;
+  
+  .filter-form label{
+    margin: 8px;
+    font-size: x-large;
   }
   option{
     text-align: center;
   }
-.product-item{
+
+  .product-item{
     width: 80%;
     margin-top: 50px;
     margin-left: 20px;
     padding-bottom: 20px;
     border-radius: 20px;
     background-color:#7F8AA8;
-}
-.product-item img{
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-}
-.product-item p{
-    font-size: x-large;
-    font-family:Arial, Helvetica, sans-serif;
-}
-::placeholder{
-text-align: center;
-font-size:larger;
-}
+    }
+    .product-item img{
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .product-item p{
+        font-size: x-large;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    .car-detail-container{
+        background-color: #7F8AA8;
+        width: 85vw;
+        margin: auto;
+        margin-top: 2%;
+        padding: 0.8%;
+        border-radius: 20px;
+        font-size: x-large;
+    }
 
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
+    .car-detail-container button{
+       font-size: xx-large;
+    }
+
+    #image-section{
+        height: 59vh;
+    }
+
+    #detailed-description {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 1.6;
+        color: #270eb5;
+    }
+    
+    .detail-content{
+        color: rgba(255, 217, 0, 0.644);
+    }
+
+    #contact-detail p,span,a{
+        font-size: 30px !important;
+    }
+    
+    #review-section .icon {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #review-section .down-content>h2 {
+        font-size: 40px;
+    }
+
+    #review-section h1{
+        font-size:50px;
+        margin-bottom: 20px;
+    }
+
+    #review-section{
+        text-align: center;
+        font-size: 30px;
+        line-height: 1.6;
+    }
+
+    #cars-heading{
+        background-image: url("/images/cars-heading.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #cars-heading h1{
+        font-size: 50px;
+        font-style: oblique;
+        color: rgb(248, 248, 248);
+    }
+
+    #cars-heading p{
+        font-size: xx-large;
+        font-weight:700px;
+        font-style: italic;
+    }
+
+    .product-item >.down-content>a,h2{
+        color: #270eb5;
+    }
+
+    .product-item{
+
+        height: 58vh;
+    }
+
+    .cars-social-container{
+        background-color: #7F8AA8;
+        width: 66vw;
+        margin: 18vw;
+        margin-top: 30px;
+        margin-bottom: 1vh;
+        padding: 20px;
+        border-radius: 20px;
+        font-size: x-large;
+    }
+
+    .cars-social-container a{
+        color: #270eb5;
+        padding: 10px;
+        font-size: xx-large;
+    }
+
+    ::placeholder{
+    text-align: center;
+    font-size:larger;
+    }
+
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
