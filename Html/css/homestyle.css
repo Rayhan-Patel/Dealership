@@ -233,10 +233,6 @@ button:hover {
        font-size: xx-large;
     }
 
-    #image-section{
-        height: 59vh;
-    }
-
     #detail-table{
         height: 59vh !important;
         padding: 0%;
@@ -320,6 +316,10 @@ button:hover {
         color: #270eb5;
         padding: 10px;
         font-size: xx-large;
+    }
+
+    #image-section{
+        height: 84.5vh;
     }
 
     ::placeholder{
