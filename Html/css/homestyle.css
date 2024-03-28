@@ -22,7 +22,12 @@
     .card{
         margin-top: 100px;
     }
-    
+
+    #detail-table{
+        width:85vw;
+        padding: 0%;
+        margin: auto;
+    }
 }
 @media (max-width:768px) {
     .buttons {
@@ -234,7 +239,6 @@ button:hover {
     }
 
     #detail-table{
-        width:85vw;
         padding: 0%;
         margin: auto;
     }
