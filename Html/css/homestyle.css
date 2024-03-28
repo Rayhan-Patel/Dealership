@@ -157,7 +157,7 @@ button:hover {
 }
 
 .Create-Account{
-    background-image: url("images/Acc_back.avif");
+    background-image: url("../images/Acc_back.avif");
     background-size:cover;
     background-position: bottom;
     color:white;
@@ -275,7 +275,7 @@ button:hover {
     }
 
     #cars-heading{
-        background-image: url("Html/images/heading1.jpg");
+        background-image: url("../images/heading1.jpg");
         background-position: bottom;
         opacity: 0.9;
         background-size: cover;
@@ -289,7 +289,7 @@ button:hover {
 
     #cars-heading p{
         font-size: xx-large;
-        font-weight:900px;
+        font-weight:600;
         font-style: italic;
         color: rgb(0, 0, 0);
     }
