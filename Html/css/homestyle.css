@@ -272,7 +272,7 @@ button:hover {
     }
 
     #cars-heading{
-        background-image: url("/images/cars-heading.jpg");
+        background-image: url("images/cars-heading.jpg");
         background-position: center;
         background-size: cover;
     }
