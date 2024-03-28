@@ -126,8 +126,8 @@ button:hover {
     margin-right: 15px;
 }
 .navbar {
-    height: 13.5vh;
-    background-color: #2A3140; 
+    background-color: #2A3140;
+    padding:0px !important;
 }
 .jumbotron {
     background-image:url("../images/back.avif");
