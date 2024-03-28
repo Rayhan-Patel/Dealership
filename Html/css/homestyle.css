@@ -234,8 +234,9 @@ button:hover {
     }
 
     #detail-table{
+        width:85vw;
         padding: 0%;
-        margin: 0%;
+        margin: auto;
     }
 
     #detailed-description {
