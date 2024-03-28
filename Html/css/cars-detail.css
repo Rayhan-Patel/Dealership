@@ -1,0 +1,25 @@
+  .carousel-item img {
+    width:40vw;
+    height:25vh;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    font-size: 0.75rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 40%;
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
