@@ -157,7 +157,7 @@ button:hover {
 }
 
 .Create-Account{
-    background-image: url("/images/Acc_back.avif");
+    background-image: url("images/Acc_back.avif");
     background-size:cover;
     background-position: bottom;
     color:white;
