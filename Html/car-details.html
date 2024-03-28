@@ -17,7 +17,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark rounded">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top rounded">
     <div class="container-fluid">
         <a class="navbar-brand m-0 p-0" href="#">
             <img src="images/logo2.png" alt="Car Dealership Logo" class="img-fluid rounded-circle-sm">
@@ -52,10 +52,10 @@
 
   <div class="car-detail-container">
     <div class="row">
-      <div class="col-md-6 col-sm-12 mb-3" id="image-area">
+      <div class="col-md-6 mb-3">
         <img src="images/car1/Baleno.webp" alt="" class="img-fluid rounded-3" id="image-section">
       </div>
-      <div class="col-md-6 col-sm-12 rounded-3 bg-success " id="detail-table">
+      <div class="col-md-6 rounded-3" id="detail-table">
           <ul class="list-group">
             <li class="list-group-item">
                 <span class="float-start">Type</span>
@@ -90,10 +90,6 @@
               <strong class="float-end">5</strong>
             </li>
             <li class="list-group-item">
-              <span class="float-start">Doors</span>
-              <strong class="float-end">4</strong>
-            </li>
-            <li class="list-group-item">
               <span class="float-start">Color</span>
               <strong class="float-end">Glossy Blue</strong>
             </li>
@@ -106,15 +102,11 @@
               <strong class="float-end">318 Litres</strong>
             </li>
             <li class="list-group-item">
-              <span class="float-start">Drive Type</span>
-              <strong class="float-end">FWD</strong>
-            </li>
-            <li class="list-group-item">
               <button class="btn btn-lg float-end" data-bs-toggle="modal" data-bs-target="#BookingModal">Book Now</button>
             </li>
           </ul>
       </div>
-      <div class="col-md-6 col-sm-12 mt-2">
+      <div class="col-md-6 mt-2">
         <div id="imageSlider" class="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -134,7 +126,7 @@
             <div class="carousel-item">
               <div class="d-flex justify-content-around">
                 <img src="images/car1/bootspace.webp" alt="Image 7" onclick="changeImage('images/car1/bootspace.webp')">
-                <img src="images/car1/Baleno.webp" alt="Image 8" onclick="changeImage('images/car1/Baleno.webp')">
+                <img src="images/Baleno.webp" class="active" alt="Image 8" onclick="changeImage('images/car1/Baleno.webp')">
               </div>
             </div>
           </div>
