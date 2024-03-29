@@ -29,7 +29,10 @@
         margin: auto;
     }
     .product-item{
-        height: 60vh;
+        height: 60vh !important;
+    }
+    .links{
+        font-size:larger !important;
     }
 }
 @media (max-width:768px) {
