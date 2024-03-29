@@ -28,6 +28,9 @@
         padding: 0%;
         margin: auto;
     }
+    .product-item{
+        height: 60vh;
+    }
 }
 @media (max-width:768px) {
     .buttons {
@@ -207,7 +210,9 @@ button:hover {
   }
 
   .product-item{
+    
     width: 80%;
+    height: 75vh;
     margin-top: 50px;
     margin-left: 20px;
     padding-bottom: 20px;
@@ -301,11 +306,6 @@ button:hover {
     .product-item >.down-content>a,
     .produc-item >.down-content>h2{
         color: #270eb5;
-    }
-
-    .product-item{
-
-        height: 75vh;
     }
 
     .cars-social-container{
